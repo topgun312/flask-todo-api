@@ -1,0 +1,19 @@
+summary: "Delete Task"
+description: "This is the API for deleting a task"
+produces:
+- "application/json"
+parameters:
+- in: "query"
+  name: "id"
+  type: "integer"
+  required: "true"
+responses:
+  200:
+    description: "Success"
+    schema:
+      properties:
+        task:
+          example: "Задача 1 удалена!"
+
+  400:
+    description: "Same response is for 202, 400"

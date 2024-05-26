@@ -1,0 +1,20 @@
+summary: "Get Task"
+description: "This is an API for getting a task by id"
+produces:
+- "application/json"
+parameters:
+- in: "query"
+  name: "id"
+  type: "integer"
+  required: "true"
+responses:
+  200:
+    description: "Success"
+    schema:
+      properties:
+        task:
+          example: {"id" : 1, "title": Work, "description": The best Work, "created_at": 2023-03-20T11:20:00, "updated_at": 2023-03-20T11:30:00}
+
+
+  400:
+    description: "Same response is for 202, 400"
